@@ -1,0 +1,140 @@
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Contact Section */
+.contact-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+/* Email */
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.email img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Certifications stacked */
+.certifications {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.certifications img {
+  height: 60px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+/* Contact Us */
+.contact-us img {
+  width: 200px;
+  max-width: 90%;
+  margin-top: 30px;
+}
+
+/* Social SVG Icons */
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials a svg {
+  width: 45px;
+  height: 45px;
+  fill: #000; /* default color */
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.socials a:hover svg {
+  transform: scale(1.2);
+  fill: #e21c06; /* hover color */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .email img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .certifications img {
+    height: 50px;
+  }
+
+  .contact-us img {
+    width: 180px;
+  }
+
+  .socials a svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .email img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .certifications img {
+    height: 45px;
+  }
+
+  .contact-us img {
+    width: 140px;
+  }
+
+  .socials a svg {
+    width: 35px;
+    height: 35px;
+  }
+}
