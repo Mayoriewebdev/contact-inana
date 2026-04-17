@@ -52,8 +52,9 @@ body {
 }
 
 .email img {
-  width: 70px;
-  height: 70px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
 
 /* Certifications stacked */
@@ -100,10 +101,7 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .email img {
-    width: 60px;
-    height: 60px;
-  }
+  
 
   .certifications img {
     height: 50px;
@@ -120,10 +118,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  .email img {
-    width: 80px;
-    height: 80px;
-  }
+  
 
   .certifications img {
     height: 45px;
